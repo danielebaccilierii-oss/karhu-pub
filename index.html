@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karhu Pub — Blues, Soul & Cold Drinks · Kallio, Helsinki</title>
+<meta name="description" content="Karhu Pub on Viides linja 16 B, Kallio — cozy pub with honest prices (5-10€), pizza and drinks, blues, soul and '40s–'60s music nights. Open till 3 AM near Karhupuisto. Book a table for your group.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Karhu Pub",
+  "servesCuisine": ["Pub food", "Pizza"],
+  "priceRange": "€5-10",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Viides linja 16 B",
+    "addressLocality": "Helsinki",
+    "postalCode": "00530",
+    "addressCountry": "FI"
+  },
+  "openingHours": "Mo-Su 14:00-03:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "360" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --amber:#e8a33d; --amber-d:#b97718; --wood:#2b1d12; --wood2:#3d2a1a;
+  --cream:#f3e6cf; --ink:#1c130c; --red:#a33327;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);padding-bottom:84px}
+.sign{font-family:'Rye',serif;letter-spacing:.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+/* top bar */
+.topbar{position:sticky;top:0;z-index:60;background:var(--wood);color:var(--cream);display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:3px solid var(--amber);box-shadow:0 3px 16px rgba(0,0,0,.3)}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Rye',serif;font-size:19px}
+.logo svg{width:30px;height:30px}
+.lang{background:transparent;border:2px solid var(--amber);color:var(--amber);font-weight:800;font-size:12px;padding:5px 12px;border-radius:999px;cursor:pointer;letter-spacing:.06em}
+/* hero */
+.hero{background:
+  radial-gradient(ellipse at 50% 120%,rgba(232,163,61,.28),transparent 60%),
+  linear-gradient(180deg,#241609 0%,var(--wood) 100%);color:var(--cream);padding:64px 0 60px;position:relative;overflow:hidden;text-align:center}
+.hero .est{color:var(--amber);font-weight:800;letter-spacing:.3em;font-size:11px;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(46px,13vw,80px);line-height:.95;color:var(--cream);text-shadow:0 3px 0 rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.5)}
+.hero h1 .amber{color:var(--amber)}
+.hero p.sub{margin:18px auto 26px;font-size:16px;max-width:36ch;color:#d8c6a8;font-weight:600}
+.cta{display:inline-block;background:var(--red);color:var(--cream);font-family:'Rye',serif;font-size:18px;padding:15px 32px;border-radius:4px;text-decoration:none;border:2px solid var(--amber);box-shadow:4px 4px 0 rgba(0,0,0,.4);transition:transform .15s,box-shadow .15s}
+.cta:active{transform:translate(2px,2px);box-shadow:1px 1px 0 rgba(0,0,0,.4)}
+.micro{margin-top:14px;font-size:13px;color:var(--amber);font-weight:700;letter-spacing:.04em}
+/* marquee */
+.marquee{background:var(--red);color:var(--cream);overflow:hidden;white-space:nowrap;padding:11px 0;font-family:'Rye',serif;font-size:15px}
+.marquee span{display:inline-block;padding-right:50px;animation:tick 22s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* sections */
+.kick{color:var(--red);font-weight:800;letter-spacing:.24em;font-size:11px;text-transform:uppercase;margin-bottom:10px}
+h2{font-family:'Rye',serif;font-size:clamp(30px,8.5vw,46px);margin-bottom:22px;line-height:1.05}
+h2 .amber{color:var(--amber-d)}
+.about p{font-size:15.5px;line-height:1.7;margin-bottom:14px;color:#43352a}
+/* music nights */
+.music{background:var(--wood);color:var(--cream)}
+.music h2{color:var(--cream)}
+.music .kick{color:var(--amber)}
+.mn{display:flex;gap:14px;align-items:center;background:var(--wood2);border:1px solid #55402a;border-radius:12px;padding:16px;margin-bottom:12px}
+.mn .disc{flex:0 0 46px;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle,#111 32%,#222 33%,#111 60%);border:3px solid var(--amber);display:flex;align-items:center;justify-content:center;font-size:18px}
+.mn h3{font-family:'Rye',serif;font-size:17px;color:var(--amber)}
+.mn p{font-size:13px;color:#cbb391;margin-top:3px}
+/* offer */
+.oitem{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:15px 4px;border-bottom:2px dotted #c9b491;font-weight:600}
+.oitem .dots{flex:1;border-bottom:2px dotted #c9b491;margin:0 8px;transform:translateY(-4px)}
+.oitem .p{font-family:'Rye',serif;color:var(--red);white-space:nowrap}
+.oitem b{font-size:15.5px}
+.oitem small{display:block;font-weight:600;color:#6f5c48;font-size:12.5px;margin-top:2px}
+.note{font-size:12.5px;color:#8a755d;margin-top:16px;font-style:italic}
+/* book a table */
+.book{background:var(--red);color:var(--cream);text-align:center}
+.book h2{color:var(--cream)}
+.book .kick{color:var(--amber)}
+.book p{max-width:40ch;margin:0 auto;font-weight:600;color:#f2d9c8}
+/* reviews */
+.score{text-align:center;margin-bottom:22px}
+.score .big{font-family:'Rye',serif;font-size:56px;color:var(--red)}
+.score .cnt{font-size:13px;font-weight:800;color:#6f5c48;text-transform:uppercase;letter-spacing:.08em}
+.rev{background:#fbf4e4;border:2px solid var(--wood);border-radius:8px;padding:18px;margin-bottom:12px;box-shadow:4px 4px 0 var(--amber)}
+.rev .stars{color:var(--amber-d);font-size:18px;letter-spacing:2px}
+.rev b{display:block;margin:6px 0 4px;font-size:15px}
+.rev p{font-size:13.5px;color:#5a4a38;line-height:1.5}
+/* hours + map */
+.hrow{display:flex;justify-content:space-between;padding:13px 4px;border-bottom:2px dotted #d9c6a3;font-weight:600;font-size:15px}
+.hrow.today{color:var(--red);font-weight:800}
+.hrow.today::before{content:"● ";font-size:10px;vertical-align:2px}
+.mapbox{margin-top:26px;border:3px solid var(--wood);border-radius:10px;overflow:hidden;box-shadow:5px 5px 0 var(--amber)}
+.mapbox iframe{width:100%;height:260px;border:0;display:block}
+.addr{text-align:center;margin-top:14px;font-weight:700;font-size:15px}
+.addr small{display:block;color:#6f5c48;font-weight:600;margin-top:3px}
+/* contact */
+.contact{text-align:center}
+.cbtns{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.cbtn{background:var(--wood);color:var(--amber);text-decoration:none;font-family:'Rye',serif;font-size:17px;padding:15px;border-radius:4px;border:2px solid var(--wood)}
+.cbtn.ghost{background:transparent;border:2px solid var(--wood);color:var(--wood)}
+/* sticky */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:var(--wood);border-top:3px solid var(--amber);box-shadow:0 -6px 24px rgba(0,0,0,.35)}
+.stickybar a{flex:1;text-align:center;padding:14px 4px 16px;text-decoration:none;color:var(--cream);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.stickybar a + a{border-left:1px solid #4a3524}
+.stickybar .ico{display:block;font-size:20px;margin-bottom:3px}
+.stickybar a.wa{background:var(--amber);color:var(--ink)}
+footer{background:var(--wood);color:#a48a67;text-align:center;font-size:11.5px;padding:20px 16px 100px;line-height:1.7}
+@media(min-width:640px){.cbtns{flex-direction:row;justify-content:center}.cbtn{padding:15px 36px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">
+    <svg viewBox="0 0 32 32" fill="var(--amber)"><path d="M6 26c0-8 2-12 4-15 1 2 2 3 3 3 0-4 1-8 3-11 2 3 3 7 3 11 1 0 2-1 3-3 2 3 4 7 4 15H6zm2 2h16v2H8v-2z"/></svg>
+    Karhu Pub
+  </div>
+  <button class="lang" id="langBtn" data-en="FI" data-fi="EN" onclick="toggleLang()">FI</button>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="est" data-en="Kallio · Viides linja 16 B · since the good old days" data-fi="Kallio · Viides linja 16 B · jo hyviltä vanhoilta ajoilta">Kallio · Viides linja 16 B · since the good old days</div>
+    <h1><span data-en="Where Kallio" data-fi="Missä Kallio">Where Kallio</span><br><span class="amber" data-en="comes to unwind" data-fi="rentoutuu">comes to unwind</span></h1>
+    <p class="sub" data-en="A cozy neighbourhood pub — honest prices, cold drinks, warm music. Blues, soul and the golden sounds of the '40s to '60s." data-fi="Viihtyisä naapurustopubi — rehelliset hinnat, kylmät juomat, lämmin musiikki. Blueseja, soulia ja kultaisia ääniä 40–60-luvuilta.">A cozy neighbourhood pub — honest prices, cold drinks, warm music. Blues, soul and the golden sounds of the '40s to '60s.</p>
+    <a class="cta" href="#book" data-en="Book a table" data-fi="Varaa pöytä">Book a table</a>
+    <div class="micro" data-en="⭐ 4.9 · 360 reviews · open till 3 AM" data-fi="⭐ 4.9 · 360 arvostelua · auki klo 3 asti">⭐ 4.9 · 360 reviews · open till 3 AM</div>
+  </div>
+</section>
+
+<div class="marquee"><span>♪ BLUES · SOUL · JUKEBOX CLASSICS · COLD BEER · WARM COMPANY · PIZZA TILL LATE · ♪ BLUES · SOUL · JUKEBOX CLASSICS · COLD BEER · WARM COMPANY · PIZZA TILL LATE · </span></div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="kick" data-en="The bear of Linjat" data-fi="Linjojen karhu">The bear of Linjat</div>
+    <h2 data-en="Old school. <span class='amber'>In the best way.</span>" data-fi="Vanhan liiton. <span class='amber'>Parhaalla tavalla.</span>">Old school. <span class="amber">In the best way.</span></h2>
+    <p data-en="Karhu — “the bear” — has been hibernating on Viides linja, a stone's throw from Karhupuisto park. Wood, amber light, a jukebox soul and prices that remember a gentler time. This is the pub where regulars have their own seats and newcomers become regulars by the second round." data-fi="Karhu on talvehtinut Viidennellä linjalla, heittokiven päässä Karhupuistosta. Puuta, amberin valoa, jukebox-sielua ja hinnat jotka muistavat lempeämmän ajan. Tämä on se pubi jossa vakioasiakkailla on omat paikkansa ja uudet tulokkaista tulee vakiokundia toisella kierroksella.">Karhu — “the bear” — has been hibernating on Viides linja, a stone's throw from Karhupuisto park. Wood, amber light, a jukebox soul and prices that remember a gentler time. This is the pub where regulars have their own seats and newcomers become regulars by the second round.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px">
+      <div style="background:#fbf4e4;border:2px solid var(--wood);border-radius:10px;padding:16px 6px;text-align:center;box-shadow:4px 4px 0 var(--amber)"><b class="sign" style="display:block;font-size:20px;color:var(--red)">5–10€</b><span style="font-size:11px;font-weight:700;text-transform:uppercase;color:#6f5c48" data-en="Honest prices" data-fi="Rehelliset hinnat">Honest prices</span></div>
+      <div style="background:#fbf4e4;border:2px solid var(--wood);border-radius:10px;padding:16px 6px;text-align:center;box-shadow:4px 4px 0 var(--amber)"><b class="sign" style="display:block;font-size:20px;color:var(--red)">4.9★</b><span style="font-size:11px;font-weight:700;text-transform:uppercase;color:#6f5c48" data-en="360 reviews" data-fi="360 arvostelua">360 reviews</span></div>
+      <div style="background:#fbf4e4;border:2px solid var(--wood);border-radius:10px;padding:16px 6px;text-align:center;box-shadow:4px 4px 0 var(--amber)"><b class="sign" style="display:block;font-size:20px;color:var(--red)">03:00</b><span style="font-size:11px;font-weight:700;text-transform:uppercase;color:#6f5c48" data-en="Open till" data-fi="Auki klo">Open till</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="music">
+  <div class="wrap">
+    <div class="kick" data-en="Sounds of the house" data-fi="Talon äänet">Sounds of the house</div>
+    <h2 data-en="Music <span style='color:var(--amber)'>nights</span>" data-fi="Musiikki-<span style='color:var(--amber)'>illat</span>">Music <span style="color:var(--amber)">nights</span></h2>
+    <div class="mn">
+      <div class="disc">🎷</div>
+      <div><h3 data-en="Blues & Soul Sessions" data-fi="Blues- & Soul-illat">Blues & Soul Sessions</h3><p data-en="Slow-burn blues and sweaty soul — the soundtrack of the house. [GIORNO/ORARIO]" data-fi="Hitaasti palavaa bluesia ja hikistä soulia — talon ääniraita. [GIORNO/ORARIO]">Slow-burn blues and sweaty soul — the soundtrack of the house. [GIORNO/ORARIO]</p></div>
+    </div>
+    <div class="mn">
+      <div class="disc">📻</div>
+      <div><h3 data-en="'40s – '60s Jukebox Night" data-fi="40–60-luvun jukebox-ilta">'40s – '60s Jukebox Night</h3><p data-en="Golden oldies on the box, sing along after the second pint. [GIORNO/ORARIO]" data-fi="Kultaisia klassikoita jukeboxista, laula mukana toisen tuopin jälkeen. [GIORNO/ORARIO]">Golden oldies on the box, sing along after the second pint. [GIORNO/ORARIO]</p></div>
+    </div>
+    <p style="font-size:12.5px;color:#a48a67;margin-top:10px" data-en="Live line-up updated monthly — easy to keep fresh on this page." data-fi="Live-ohjelma päivitetään kuukausittain — helppo pitää tämä sivu tuoreena.">Live line-up updated monthly — easy to keep fresh on this page.</p>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="wrap">
+    <div class="kick" data-en="From the bar & kitchen" data-fi="Tiskiltä & keittiöstä">From the bar & kitchen</div>
+    <h2 data-en="Honest <span class='amber'>prices</span>" data-fi="Rehelliset <span class='amber'>hinnat</span>">Honest <span class="amber">prices</span></h2>
+    <div class="oitem"><b data-en="Draught beer" data-fi="Hanaolut">Draught beer</b><span class="dots"></span><span class="p">[PREZZO]</span></div>
+    <div class="oitem"><b data-en="House wine / long drink" data-fi="Talon viini / lonkero">House wine / long drink</b><span class="dots"></span><span class="p">[PREZZO]</span></div>
+    <div class="oitem"><b data-en="Pub pizza" data-fi="Pub-pizza">Pub pizza</b><span class="dots"></span><span class="p">[PREZZO]</span></div>
+    <div class="oitem"><b data-en="Bar snacks" data-fi="Baari-snackit">Bar snacks</b><span class="dots"></span><span class="p">[PREZZO]</span></div>
+    <div class="note" data-en="Final drink list and prices confirmed with the owner before launch." data-fi="Lopullinen juomalista ja hinnat varmistetaan omistajan kanssa ennen julkaisua.">Final drink list and prices confirmed with the owner before launch.</div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="kick" data-en="Groups welcome" data-fi="Ryhmät tervetulleita">Groups welcome</div>
+    <h2 data-en="Book a table for <span style='color:var(--amber)'>your group</span>" data-fi="Varaa pöytä <span style='color:var(--amber)'>ryhmällesi</span>">Book a table for <span style="color:var(--amber)">your group</span></h2>
+    <p data-en="Birthdays, after-work crews, quiz teams, old friends — tell us how many you are and we'll keep the corner table warm." data-fi="Syntymäpäivät, työporukat, visailutiimit, vanhat ystävät — kerro montako teitä on, niin pidämme kulmapöydän lämpimänä.">Birthdays, after-work crews, quiz teams, old friends — tell us how many you are and we'll keep the corner table warm.</p>
+    <div class="cbtns" style="margin-top:26px">
+      <a class="cbtn" style="background:var(--amber);color:var(--ink);border-color:var(--amber)" href="https://wa.me/[WHATSAPP]?text=Hi!%20I%27d%20like%20to%20book%20a%20table%20for%20a%20group%20%F0%9F%8D%BA" data-en="💬 Book via WhatsApp" data-fi="💬 Varaa WhatsAppilla">💬 Book via WhatsApp</a>
+      <a class="cbtn" style="background:transparent;border:2px solid var(--cream);color:var(--cream)" href="mailto:[EMAIL]?subject=Table%20booking%20—%20Karhu%20Pub" data-en="✉️ Email us" data-fi="✉️ Lähetä sähköpostia">✉️ Email us</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="kick" data-en="The regulars say" data-fi="Vakioasiakkaat sanovat">The regulars say</div>
+    <h2 data-en="Beloved <span class='amber'>bear</span>" data-fi="Rakastettu <span class='amber'>karhu</span>">Beloved <span class="amber">bear</span></h2>
+    <div class="score">
+      <div class="big">4.9★</div>
+      <div class="cnt" data-en="360 Google reviews" data-fi="360 Google-arvostelua">360 Google reviews</div>
+    </div>
+    <div class="rev"><div class="stars">★★★★★</div><b data-en="“The coziest pub in Kallio — prices from another decade.”" data-fi="“Kallion kodikkaisin pubi — hinnat toiselta vuosikymmeneltä.”">“The coziest pub in Kallio — prices from another decade.”</b></div>
+    <div class="rev"><div class="stars">★★★★★</div><b data-en="“Great music, warm atmosphere, the staff remembers your order.”" data-fi="“Hieno musiikki, lämmin tunnelma, henkilökunta muistaa tilauksesi.”">“Great music, warm atmosphere, the staff remembers your order.”</b></div>
+  </div>
+</section>
+
+<section class="hoursmap">
+  <div class="wrap">
+    <div class="kick" data-en="Find the bear" data-fi="Löydä karhu">Find the bear</div>
+    <h2 data-en="Near <span class='amber'>Karhupuisto</span>" data-fi="Lähellä <span class='amber'>Karhupuistoa</span>">Near <span class="amber">Karhupuisto</span></h2>
+    <div class="hrow today"><span data-en="Monday – Sunday" data-fi="Maanantai – sunnuntai">Monday – Sunday</span><span data-en="till 3:00 [ORARI]" data-fi="klo 3 asti [ORARI]">till 3:00 [ORARI]</span></div>
+    <div class="mapbox">
+      <iframe title="Karhu Pub map" src="https://maps.google.com/maps?q=Viides%20linja%2016%20B%2C%2000530%20Helsinki&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+    <div class="addr">
+      📍 Viides linja 16 B, 00530 Helsinki — Kallio
+      <small data-en="Linjat district, next to Karhupuisto park" data-fi="Linjat, Karhupuiston vieressä">Linjat district, next to Karhupuisto park</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kick" data-en="Say hello" data-fi="Tervehdi">Say hello</div>
+    <h2 data-en="The bear is <span class='amber'>waiting</span>" data-fi="Karhu <span class='amber'>odottaa</span>">The bear is <span class="amber">waiting</span></h2>
+    <div class="cbtns">
+      <a class="cbtn" href="tel:[TELEFONO]" data-en="📞 Call [TELEFONO]" data-fi="📞 Soita [TELEFONO]">📞 Call [TELEFONO]</a>
+      <a class="cbtn ghost" href="mailto:[EMAIL]" data-en="✉️ [EMAIL]" data-fi="✉️ [EMAIL]">✉️ [EMAIL]</a>
+    </div>
+  </div>
+</section>
+
+<nav class="stickybar">
+  <a href="tel:[TELEFONO]"><span class="ico">📞</span><span data-en="Call" data-fi="Soita">Call</span></a>
+  <a class="wa" href="https://wa.me/[WHATSAPP]"><span class="ico">💬</span><span data-en="WhatsApp" data-fi="WhatsApp">WhatsApp</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Viides+linja+16+B,+00530+Helsinki" target="_blank" rel="noopener"><span class="ico">🧭</span><span data-en="Directions" data-fi="Reitti">Directions</span></a>
+</nav>
+
+<footer>
+  KARHU PUB · VIIDES LINJA 16 B, HELSINKI<br>
+  <span data-en="Demo website — final menus, prices and contact details are added together with the owner." data-fi="Demosivusto — lopulliset listat, hinnat ja yhteystiedot lisätään yhdessä omistajan kanssa.">Demo website — final menus, prices and contact details are added together with the owner.</span>
+</footer>
+
+<script>
+function toggleLang(){
+  const html=document.documentElement;
+  const to=html.lang==='en'?'fi':'en';
+  html.lang=to;
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const t=el.dataset[to]; if(t!==undefined) el.innerHTML=t;
+  });
+  document.getElementById('langBtn').textContent = to==='en' ? 'FI' : 'EN';
+  try{localStorage.setItem('karhu-lang',to)}catch(e){}
+}
+try{const s=localStorage.getItem('karhu-lang'); if(s&&s!=='en'){document.documentElement.lang='en'; toggleLang();}}catch(e){}
+</script>
+</body>
+</html>
